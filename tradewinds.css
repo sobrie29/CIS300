@@ -314,6 +314,10 @@ legend {
         grid-gap: 1em;
     }
 
+    fieldset.form-group {
+        grid-column: 1 / -1;
+    }
+	
     input[type="submit"] {
         grid-column: 2;
         width: 9em;
