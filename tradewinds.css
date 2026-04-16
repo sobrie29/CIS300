@@ -295,8 +295,6 @@ textarea {
 @media (min-width: 1024px) {
 
     #wrapper {
-        margin: auto;
-        width: 80%;
         border: 1px solid #000033;
         box-shadow: 3px 3px 3px #000033;
     }
