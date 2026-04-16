@@ -198,6 +198,8 @@ tr:nth-of-type(odd) {
 
 
 #wrapper {
+	max-width: 725px;
+    margin: 0 auto;
     background-image: linear-gradient(
         to bottom,
         #d9e6ea 0px,
