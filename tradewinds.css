@@ -188,7 +188,7 @@ tr:nth-of-type(odd) {
 	#industrieshero, 
 	#contacthero,
 	#abouthero	{
-		height: 300px;
+		height: 400px;
 		background-size: cover;
 		border-radius: 20px 0PX 0PX 0PX;
 		background-position: center
@@ -203,7 +203,7 @@ tr:nth-of-type(odd) {
 
 
 #wrapper {
-	max-width: 905px;
+	max-width: 1240px;
     margin: 0 auto;
     background-image: linear-gradient(
         to bottom,
