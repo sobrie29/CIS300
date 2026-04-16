@@ -179,7 +179,7 @@ tr:nth-of-type(odd) {
 		#tradeheader { background-image: url("white_logo.png"); }
 
 	#homehero,
-	#yurthero,
+	#servicehero,
 	#trailhero {
 		height: 300px;
 		background-size: 100% 100%;
