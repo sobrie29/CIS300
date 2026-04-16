@@ -2,9 +2,7 @@
     box-sizing: border-box;
 }
 
-/* ===========================
-   BASE PAGE STYLES
-   =========================== */
+/* SECTION DECLARATIONS */
 
 body {
     background-color: #EAEAEA;
@@ -13,51 +11,56 @@ body {
     margin: 0;
 }
 
-#wrapper {
-    max-width: 725px;
-    margin: 0 auto;
-    background-image: linear-gradient(
-        to bottom,
-        #d9e6ea 0px,
-        #d9e6ea 180px,
-        #d9e6ea 360px,
-        #005670 100%
-    );
+
+footer {
+    background-color: #FFFFFF;
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+    padding: 2em;
+    font-family: Georgia, "Times New Roman", serif;
 }
 
-/* ===========================
-   HEADER
-   =========================== */
 
 header {
     background-color: #d9e6ea;
-    background-image: url("animation_pulse.gif");
-    background-size: 175px 140px;
-    background-repeat: no-repeat;
-    background-position: 10px 10px;
+	background-image: url("animation_pulse.gif");
+	background-size: 175px 140px;
+		background-repeat: no-repeat;
+		
+		
 
-    padding-left: 190px;
+    background-position: 10px 10px; /* space from left & top */
+
+    padding-left: 190px;  /* image width (175) + 10px left + 5px buffer */
     padding-right: 1em;
-    padding-bottom: 2.5em;
 
+	padding-bottom: 2.5em;
     font-family: Tahoma, sans-serif;
+    /*color: #FFFFFF; */
     text-align: right;
 }
 
+
 header h1 {
-    margin-bottom: 0.15em;
+    margin-bottom: 0.15em;   /* reduce gap below company name */
 }
 
 header .motto {
-    margin: 0 0 0.75em;
+    font-family: Tahoma, sans-serif;
+	margin: 0;
     font-size: 1.4rem;
     font-weight: 600;
     letter-spacing: 0.15em;
+    text-shadow: 3px 1px 1px #000000;	
+    margin-bottom: 0.75em;   /* space below motto */
+    /* padding-bottom: 0.25em; optional extra breathing room */
+
     text-transform: uppercase;
     color: #ffffff;
     opacity: 0.9;
-    text-shadow: 3px 1px 1px #000000;
 }
+
 
 header a:link,
 header a:visited {
@@ -69,9 +72,6 @@ header a:hover {
     color: #90C7E3;
 }
 
-/* ===========================
-   HEADINGS
-   =========================== */
 
 h1 {
     margin: 0;
@@ -89,12 +89,21 @@ h2 {
 h3 {
     color: #000033;
     font-family: Georgia, "Times New Roman", serif;
-    text-align: center;
+	text-align: center;
 }
 
-/* ===========================
-   NAVIGATION
-   =========================== */
+
+
+main {
+    background-color: #FFFFFF;
+	padding: 1em;
+}
+
+
+main ul {
+    list-style-image: url("marker.gif");
+}
+
 
 nav {
     padding: 0;
@@ -113,84 +122,116 @@ nav li {
 }
 
 nav a {
+    text-decoration: none;
     display: block;
     padding: 0.5em;
-    text-decoration: none;
 }
 
-nav a:link { color: #5C7FA3; }
-nav a:visited { color: #344873; }
-nav a:hover { color: #A52A2A; }
-
-/* ===========================
-   HERO SECTIONS
-   =========================== */
-
-.hero-container {
-    max-width: 725px;
-    margin: 0 auto;
+nav a:link {
+    color: #5C7FA3;
 }
 
-#homehero,
-#servicehero,
-#industrieshero,
-#contacthero,
-#abouthero {
-    height: 300px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 20px 0 0 0;
+nav a:visited {
+    color: #344873;
 }
 
-#homehero { background-image: url("components.avif"); }
-#servicehero { background-image: url("packaging_line.jpg"); }
-#industrieshero { background-image: url("components.avif"); }
-#contacthero { background-image: url("components.avif"); }
-#abouthero { background-image: url("components.avif"); }
-
-/* ===========================
-   MAIN / CONTENT
-   =========================== */
-
-main {
-    background-color: #FFFFFF;
-    padding: 1em;
+nav a:hover {
+    color: #A52A2A;
 }
 
-main ul {
-    list-style-image: url("marker.gif");
-}
+/* TABLE DECLARATIONS */
 
-/* ===========================
-   TABLES
-   =========================== */
 
-table {
-    border: 2px solid #3399CC;
-    border-collapse: collapse;
-}
 
-td, th {
-    padding: 0.5em;
-    border: 2px solid #3399CC;
+table { 
+	border: 2px solid #3399CC; 
+	border-collapse: collapse; 
+	}
+
+td, th { 
+	padding: 0.5em;
+	border: 2px solid #3399CC;
+/*	font-family: Arial, sans-serif; */
 }
 
 td {
-    text-align: center;
+	text-align: center;
 }
 
 tr:nth-of-type(odd) {
     background-color: #F5FAFC;
 }
 
-/* ===========================
-   FORMS
-   =========================== */
+
+
+/* ID Selectors */
+
+	#contact {
+		font-size: 90%;
+	}	
+
+	#tradeheader {
+		height: 100px;
+		background-size: 10% 100%;
+		background-repeat: no-repeat;
+	}
+		#tradeheader { background-image: url("white_logo.png"); }
+
+
+	.hero-container {
+    	max-width: 725px;
+    	margin: 0 auto;
+	}
+
+	#homehero,
+	#servicehero,
+	#industrieshero, 
+	#contacthero,
+	#abouthero	{
+		height: 300px;
+		background-size: cover;
+		border-radius: 20px 0PX 0PX 0PX;
+		background-position: center
+	}
+
+		#homehero { background-image: url("components.avif"); }
+		#servicehero { background-image: url("packaging_line.jpg"); }
+		#industrieshero { background-image: url("components.avif"); }
+		#contacthero { background-image: url("components.avif"); }
+		#abouthero { background-image: url("components.avif"); }
+
+
+
+#wrapper {
+	max-width: 725px;
+    margin: 0 auto;
+    background-image: linear-gradient(
+        to bottom,
+        #d9e6ea 0px,
+        #d9e6ea 180px,
+        #d9e6ea 360px,
+        #005670 100%
+    );
+}
+
+
+
+/* CLASS DECLARATIONS */
+
+	.address {
+		color: #005670;
+		font-weight: bold;
+	}
+
+	.text {
+		text-align: left;
+	}
+
 
 form {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 input,
@@ -198,47 +239,11 @@ textarea {
     margin-bottom: 0.5em;
 }
 
-/* ===========================
-   FOOTER
-   =========================== */
 
-footer {
-    background-color: #FFFFFF;
-    font-size: 75%;
-    font-style: italic;
-    text-align: center;
-    padding: 2em;
-    font-family: Georgia, "Times New Roman", serif;
-}
-
-/* ===========================
-   IDS & CLASSES
-   =========================== */
-
-#contact { font-size: 90%; }
-
-#tradeheader {
-    height: 100px;
-    background-image: url("white_logo.png");
-    background-size: 10% 100%;
-    background-repeat: no-repeat;
-}
-
-.address {
-    color: #005670;
-    font-weight: bold;
-}
-
-.text {
-    text-align: left;
-}
-
-/* ===========================
-   MEDIUM DISPLAYS
-   =========================== */
-
+/* MEDIUM DISPLAY */
 @media (min-width: 600px) {
 
+	
     #wrapper {
         border: 1px solid #000033;
         box-shadow: 3px 3px 3px #000033;
@@ -246,6 +251,8 @@ footer {
 
     nav ul {
         display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
         justify-content: space-around;
     }
 
@@ -255,24 +262,36 @@ footer {
 
     .flow {
         display: flex;
+        flex-direction: row;
     }
+
+	section {
+		flex: 1;
+	}
+
+	.main-section {
+		flex: 2.5;
+	}
 
     section {
+		border: 2.5px solid #005670;
+		border-radius: 5px;
+		padding: .25em .25em .25em .3em;
+		margin-left: .25em;
+        margin-right: .25em;
         flex: 1;
-        border: 2.5px solid #005670;
-        border-radius: 5px;
-        padding: .25em;
-        margin: .25em;
     }
-
-    .main-section { flex: 2.5; }
-
+	
+	sessionul{
+		list-style-type: none;
+	}
+	
     form {
         width: 60%;
         max-width: 30em;
         display: grid;
         grid-template-columns: 6em 1fr;
-        gap: 1em;
+        grid-gap: 1em;
     }
 
     input[type="submit"] {
@@ -281,11 +300,15 @@ footer {
     }
 }
 
-/* ===========================
-   LARGE DISPLAYS
-   =========================== */
 
+
+/* LARGE DISPLAY */
 @media (min-width: 1024px) {
+
+    #wrapper {
+        border: 1px solid #000033;
+        box-shadow: 3px 3px 3px #000033;
+    }
 
     nav {
         text-align: left;
@@ -296,7 +319,7 @@ footer {
 
         header { grid-area: header; }
         nav { grid-area: nav; }
-        .hero-container { grid-area: hero; }
+        .hero { grid-area: hero; }
         main { grid-area: main; }
         footer { grid-area: footer; }
 
