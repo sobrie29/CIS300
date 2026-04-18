@@ -365,3 +365,44 @@ footer {
         }
     }
 }
+
+
+/* PARTNER CASE STUDY STYLES */
+.partner-case {
+    margin-bottom: 2.5em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.partner-name {
+    font-family: "Trebuchet MS", Tahoma, sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #000033;
+    margin-bottom: 0.25em;
+}
+
+.partner-descriptor {
+    font-style: italic;
+    color: #666666;
+    margin-bottom: 0.75em;
+}
+
+.partner-label {
+    font-weight: bold;
+    color: #005670;
+}
+
+.partner-text {
+    margin: 0.25em 0 0.75em 0;
+    text-align: left;
+}
+
+.partner-impact ul {
+    margin-top: 0.25em;
+    padding-left: 1.25em;
+}
+
+.partner-impact li {
+    margin-bottom: 0.3em;
+}
