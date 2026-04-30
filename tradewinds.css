@@ -259,6 +259,12 @@ legend {
     text-align: left;
 }
 
+.external-link {
+    text-align: center;
+    margin: 1.5em auto;
+    max-width: 900px;
+}
+
 /* FOOTER */
 footer {
     background-color: #FFFFFF;
