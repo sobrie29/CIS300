@@ -199,8 +199,9 @@ tr:nth-of-type(odd) {
     background-color: #F5FAFC;
 }
 
-sessionul {
-    list-style-type: none;
+.plain-list {
+    list-style: none;
+    padding-left: 0;
 }
 
 /* FORMS */
